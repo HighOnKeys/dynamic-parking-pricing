@@ -97,7 +97,7 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 **Model 2 Visual:**
 
 ![Model 2 Trend](outputs/model2_daily_price_plot.png)
-![Model 2 Combined](outputs/model2_combined_price_comparison.png)
+![Model 2 Combined](outputs/model2_price_trends.png)
 
 ---
 
