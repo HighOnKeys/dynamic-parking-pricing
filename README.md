@@ -70,8 +70,8 @@ Compute Max/Min ➝ Apply Price Formula ➝ JSONL Output ➝ Bokeh/Panel
 
 **Model 1 Visuals:**
 
-![Model 1 Trend](outputs/Model1 Daily Parking Price.png)
-![Model 1 Combined](outputs/Model1 Daily Pricing Across Parking Lots.png)
+![Model 1 Trend](outputs/model1_daily_price_plot.png)
+![Model 1 Combined](outputs/model1_all_lots_price_trend.png)
 
 ---
 
@@ -96,7 +96,7 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 
 **Model 2 Visual:**
 
-![Model 2 Visual](outputs/MODEL 2 - Daily Parking Price (1).png)
+![Model 2 Visual](outputs/model2_daily_price_plot.png)
 
 ---
 
@@ -106,7 +106,7 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 | ------------------------------------- | ------------------------------------ |
 | `outputs/model1_price_trends.html`    | Lot-wise trends from Model 1         |
 | `outputs/model2_price_trends.html`    | Lot-wise trends from Model 2         |
-| `outputs/daily_pricing_comparison.html` | Combined trends across lots (Model 2) |
+| `outputs/model2_combined_price_comparison.html` | Combined trends across lots (Model 2) |
 
 ---
 
