@@ -136,3 +136,18 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 - [x] HTML/JSONL output export
 
 ---
+
+## Future Improvements
+
+-  **API Integration** – Stream real-time data via WebSocket or REST.
+-  **Smarter Geospatial Logic** – Use GPS and road network data.
+-  **Advanced Pricing Models** – Add ML/RL-based dynamic pricing.
+-  **Better Visualizations** – Interactive dashboards with filters and heatmaps.
+-  **Historical Logging** – Store pricing data for analysis.
+-  **A/B Testing** – Compare model performance across lots.
+-  **Modular Codebase** – Refactor into reusable components with config support.
+-  **Docker Support** – Easy deployment via Docker and Compose.
+-  **Testing & CI** – Add unit tests and GitHub Actions.
+-  **Security Enhancements** – Role-based access and secure endpoints.
+
+---
