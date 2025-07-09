@@ -28,28 +28,7 @@ This project implements **dynamic parking pricing models** using **real-time str
 
 ## Architecture Diagram
 
-                     +---------------------+
-                     |     dataset.csv     |
-                     +---------------------+
-                                ↓
-                    +-------------------------+
-                    | Preprocessing (Pandas)  |
-                    +-------------------------+
-                                ↓
-             +--------------------------------------+
-             | Stream via Pathway (CSV Replay)      |
-             +--------------------------------------+
-                  ↓                      ↓
-        +----------------+       +--------------------+
-        |  Model 1       |       |     Model 2        |
-        |  Linear Price  |       | Demand-Based Price |
-        +----------------+       +--------------------+
-                  ↓                      ↓
-            [ JSONL Output ]       [ JSONL Output ]
-                  ↓                      ↓
-        +------------------+    +----------------------+
-        | Bokeh Dashboard  |    | Bokeh Dashboard      |
-        +------------------+    +----------------------+
+![Architecture diagram](architecture_diagram.png)
 
 ---
 
