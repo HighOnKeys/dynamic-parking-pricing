@@ -60,6 +60,11 @@ Calculates the maximum and minimum occupancy rates observed throughout the day.
 ```python
 price = 10 + (max_occupancy_rate - min_occupancy_rate) / capacity
 ```
+➤ Save Output
+Saves per-lot, per-day prices as .jsonl and .html files for analysis and display.
+
+➤ Visualize with Bokeh
+Generates interactive time-series plots of parking prices using Bokeh dashboards.
 
 **Workflow:**
 ```
@@ -76,6 +81,27 @@ Compute Max/Min ➝ Apply Price Formula ➝ JSONL Output ➝ Bokeh/Panel
 
 ### Model 2: Demand-Based Pricing
 
+➤ Encode Features
+Converts string-based inputs:
+
+TrafficConditionNearby → Numeric traffic level
+
+VehicleType → Encoded vehicle factor
+
+➤ Group Data by Lot and Day
+Like Model 1, uses Pathway tumbling windows to aggregate per lot per day.
+
+➤ Compute Averages
+Calculates daily average values for:
+
+Occupancy Rate
+
+Queue Length
+
+Traffic Level
+
+Vehicle Factor
+
 **Demand Formula:**
 ```python
 demand = 1*occ + 0.5*queue - 0.2*traffic + 2*special + 0.8*vehicle
@@ -85,6 +111,15 @@ demand = 1*occ + 0.5*queue - 0.2*traffic + 2*special + 0.8*vehicle
 ```python
 price = base * (1 + lambda * min(demand / max_demand, 1))
 ```
+base = 10
+
+max_demand = 50
+
+➤ Save Output
+Outputs are written to .jsonl and .html for tracking daily pricing trends.
+
+➤ Visualize with Bokeh
+Interactive charts illustrate how price fluctuates based on demand-related features.
 
 **Workflow:**
 ```
