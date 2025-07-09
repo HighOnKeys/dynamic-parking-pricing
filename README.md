@@ -30,6 +30,17 @@ This project implements **dynamic parking pricing models** using **real-time str
 
 ![Architecture diagram](architecture_diagram.png)
 
+--This flowchart outlines the end-to-end pipeline for the Dynamic Parking Pricing system, detailing both Model 1 (Linear Pricing) and Model 2 (Demand-Based Pricing):
+
+--**Overall Workflow**:
+---**Raw Data Input**
+----Starts with a CSV dataset containing fields like timestamp, occupancy, capacity, queue length, traffic condition, vehicle type, and special day indicators.
+---**Preprocessing**
+----Combines date and time fields into a proper timestamp.
+----Computes occupancy rate as occupancy / capacity.
+---**Real-time Stream Ingestion**
+----The processed CSV is fed into the system using Pathway's CSV replay to simulate a real-time data stream.
+
 ---
 
 ## Data Flow Summary
