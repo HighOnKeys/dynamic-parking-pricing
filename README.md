@@ -50,6 +50,12 @@ This flowchart outlines the end-to-end pipeline for the Dynamic Parking Pricing 
 
 ### Model 1: Linear Pricing
 
+➤ Group Data by Lot and Day
+Uses tumbling time windows to isolate and group each parking lot's data on a per-day basis.
+
+➤ Compute Volatility
+Calculates the maximum and minimum occupancy rates observed throughout the day.
+
 **Formula:**
 ```python
 price = 10 + (max_occupancy_rate - min_occupancy_rate) / capacity
