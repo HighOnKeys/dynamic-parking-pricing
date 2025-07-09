@@ -110,12 +110,6 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 
 ---
 
-## Notebooks Included
-
-- `notebooks/model1_linear_pricing.ipynb`
-- `notebooks/model2_demand_pricing.ipynb`
-
----
 ## CSV Pricing Outputs (converted from jsonl --> csv)
 
 | File                  | Description                      |
@@ -124,6 +118,14 @@ Compute Price ➝ JSONL Output ➝ Bokeh/Panel
 | `outputs/pricing_output_model2.csv`  | Final price output from Model 2 (Demand-Based)   |
 
 ---
+
+## Notebooks Included
+
+- `notebooks/model1_linear_pricing.ipynb`
+- `notebooks/model2_demand_pricing.ipynb`
+
+---
+
 
 ## Project Status
 
